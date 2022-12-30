@@ -132,9 +132,7 @@ function App() {
     </div>
   </header>
   <main>
-    Respossive Drop-down <br />
-    Menu Bar <br />
-    HTML &amp; CSS only
+    HOME page
   </main>
   <footer>
     Designed and developed by Courses4Arab.com
