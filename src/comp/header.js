@@ -1,68 +1,70 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Header.css"
 
 export default function Header() {
   return (
-    <div>
+    <div className="Header">
       <header className="hide-when-mobile">
-        <h1>Courses 4 Arab</h1>
+        <h1><Link to="/">c4a.dev</Link></h1>
         <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="/html">
+            <NavLink className="main-link" to="/html">
               HTML
-            </a>
+            </NavLink>
             <ul className="sub-ul">
               <li>
-                <a href="">Full Course</a>
+                <Link to="">Full Course</Link>
               </li>
               <li>
-                <a href="">Crash Course</a>
+                <Link to="">Crash Course</Link>
               </li>
               <li>
-                <a href="">learn in 1h</a>
+                <Link to="">learn in 1h</Link>
               </li>
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/css">
+            <NavLink className="main-link" to="/css">
               CSS
-            </a>
+            </NavLink>
             <ul className="sub-ul">
               <li>
-                <a href="">Full Course</a>
+                <Link to="">Full Course</Link>
               </li>
               <li>
-                <a href="">CSS Examples</a>
+                <Link to="">CSS Examples</Link>
               </li>
               <li className="mini-projects">
-                <a href="">mini projects&nbsp; + </a>
+                <Link to="">mini projects&nbsp; + </Link>
                 <ul className="sub-sub-ul">
                   <li>
-                    <a href="">project 1</a>
+                    <Link to="">project 1</Link>
                   </li>
                   <li>
-                    <a href="">project 2</a>
+                    <Link to="">project 2</Link>
                   </li>
                   <li>
-                    <a href="">project 3</a>
+                    <Link to="">project 3</Link>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
           <li className="main-list">
-            <a className="main-link" href="/javascript">
+            <NavLink className="main-link" to="/javascript">
               JavaScript
-            </a>
+            </NavLink>
             <ul className="sub-ul sub-of-js">
               <li>
-                <a href="">coming soon🔥</a>
+                <Link to="">coming soon🔥</Link>
               </li>
             </ul>
           </li>
         </ul>
       </header>
-      <header className="show-when-mobile">
-        <h1>Courses 4 Arab</h1>
+      <header style={{ backgroundColor: "teal" }} className="show-when-mobile">
+      <h1><Link to="/">c4a.dev</Link></h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
         </label>
@@ -75,13 +77,13 @@ export default function Header() {
             <input id="html" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <Link to="">Full Course</Link>
               </li>
               <li>
-                <a href="">Crash Course</a>
+                <Link to="">Crash Course</Link>
               </li>
               <li>
-                <a href="">learn in 1h</a>
+                <Link to="">learn in 1h</Link>
               </li>
             </ul>
           </div>
@@ -92,10 +94,10 @@ export default function Header() {
             <input id="css" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <Link to="">Full Course</Link>
               </li>
               <li>
-                <a href="">CSS Examples</a>
+                <Link to="">CSS Examples</Link>
               </li>
               <li>
                 <label className="mini-projects" htmlFor="mini">
@@ -104,13 +106,13 @@ export default function Header() {
                 <input id="mini" type="checkbox" />
                 <ul className="sub-sub-div">
                   <li>
-                    <a href="">project 1</a>
+                    <Link to="">project 1</Link>
                   </li>
                   <li>
-                    <a href="">project 2</a>
+                    <Link to="">project 2</Link>
                   </li>
                   <li>
-                    <a href="">project 3</a>
+                    <Link to="">project 3</Link>
                   </li>
                 </ul>
               </li>
@@ -123,7 +125,7 @@ export default function Header() {
             <input id="js" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">coming soon🔥</a>
+                <Link to="">coming soon🔥</Link>
               </li>
             </ul>
           </div>

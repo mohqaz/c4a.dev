@@ -1,12 +1,13 @@
 import Header from "../comp/header";
 import Footer from "../comp/Footer";
+import Maincontent from "../comp/Maincontent";
 
 export default function Css() {
     return (
       <div>
         <>
           <Header />
-          <main>css page</main>
+          <Maincontent pageName="CSS page" />
           <Footer />
         </>
       </div>
