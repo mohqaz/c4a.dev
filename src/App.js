@@ -131,9 +131,9 @@ function App() {
       </div>
     </div>
   </header>
-  <main>
-    HOME page
-  </main>
+    <main>
+      HOME page
+    </main>
   <footer>
     Designed and developed by Courses4Arab.com
     <span>🧡</span>

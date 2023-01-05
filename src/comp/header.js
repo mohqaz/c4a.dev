@@ -5,7 +5,7 @@ import "./Header.css"
 export default function Header() {
   return (
     <div className="Header">
-      <header className="hide-when-mobile">
+      <header className="hide-when-mobile moha">
         <h1><Link to="/">c4a.dev</Link></h1>
         <ul className="flex">
           <li className="main-list">
@@ -63,7 +63,7 @@ export default function Header() {
           </li>
         </ul>
       </header>
-      <header style={{ backgroundColor: "teal" }} className="show-when-mobile">
+      <header className="show-when-mobile">
       <h1><Link to="/">c4a.dev</Link></h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
