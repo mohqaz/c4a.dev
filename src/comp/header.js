@@ -63,7 +63,7 @@ export default function Header() {
           </li>
         </ul>
       </header>
-      <header className="show-when-mobile">
+      <header className="show-when-mobile moha">
       <h1><Link to="/">c4a.dev</Link></h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />

@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Html from "./pages/html";
 import Css from "./pages/css";
 import Javascript from "./pages/javascript";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,8 @@ root.render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+serviceWorkerRegistration.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
